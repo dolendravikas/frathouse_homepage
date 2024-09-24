@@ -82,7 +82,7 @@ h2 {
 .member img {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: 5%;
     object-fit: cover;
 }
 
@@ -162,3 +162,38 @@ footer {
     font-size: 0.9em;
     color: #999;
 }
+
+
+.member {
+    margin: 10px;
+    text-align: center;
+    border: 2px solid #f0a500;
+    padding: 10px;
+    background-color: #222;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+.member:hover {
+    transform: scale(1.1); /* Zoom the whole card */
+}
+
+
+.image-carousel {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: thin; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+.image-carousel::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+.image-carousel img {
+    max-width: 200px; /* Adjust width as needed */
+    height: auto;
+    margin-right: 10px; /* Spacing between images */
+    border-radius: 10px; /* Optional: rounded corners for images */
+}
+
